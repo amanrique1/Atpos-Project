@@ -6,14 +6,14 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'base.html')
 
 def darProductos(request):
     queryset = Producto.objects.all().order_by('-marca')[:10]
     context = {
         'productos_list': queryset
     }    
-    return render(request, 'apps/Producto/measurements.html', context) #Ojo con el HTML
+    return render(request, '/Producto/darProducto.html', context) #Ojo con el HTML
 
 def crearProducto(request):
     if request.method == 'POST':
@@ -32,4 +32,4 @@ def crearProducto(request):
         'form': form,
     }
 
-    return render(request, 'apps/Producto/measurementCreate.html', context)
+    return render(request, 'Producto/crearProducto.html', context)

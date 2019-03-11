@@ -3,9 +3,10 @@ from django import forms
 from .models import Producto
 
 class ProductoForm(forms.ModelForm):
-    model = Producto #Le dice a Djando que este form es para los modelos de producto
-    #Campos a recibir
-    fields = ['codigoBarras', 'nombre', 'cantidadMedida', 'unidadMedida', 'descripcion', 'marca']
+    class Meta:        
+        model = Producto #Le dice a Djando que este form es para los modelos de producto
+        #Campos a recibir
+        fields = ['codigoBarras', 'nombre', 'cantidadMedida', 'unidadMedida', 'descripcion', 'marca']
     
 
 

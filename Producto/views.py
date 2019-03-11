@@ -2,7 +2,7 @@ from .models import Producto
 from django.shortcuts import render, redirect
 from .forms import ProductoForm
 from django.contrib import messages
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 
 def index(request):
@@ -13,7 +13,7 @@ def darProductos(request):
     context = {
         'productos_list': queryset
     }    
-    return render(request, '/Producto/darProducto.html', context) #Ojo con el HTML
+    return render(request, 'Producto/darProducto.html', context) #Ojo con el HTML
 
 def crearProducto(request):
     if request.method == 'POST':
@@ -22,7 +22,7 @@ def crearProducto(request):
             producto = form.save()
             producto.save()
             messages.add_message(request, messages.SUCCESS, 'El producto ha sido creado satisfactoriamente')
-            return HttpResponseRedirect(reverse('crearProducto'))
+            return HttpResponse("Producto creado satisfactoriamente")
         else:
             print(form.errors)
     else:

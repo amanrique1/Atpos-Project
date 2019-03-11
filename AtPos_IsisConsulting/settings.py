@@ -25,7 +25,7 @@ SECRET_KEY = '4199m_b$@t&^@l1qnj52w9sx*vfa-z5uz16xa!e!b=ehb_2(as'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','0.0.0.0']
 
 
 # Application definition
@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'AtPos_IsisConsulting.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'atpos',
-        'USER':'postgres',
-        'PASSWORD':'admin',
+        'NAME': 'prueba',
+        'USER':'geovanny',
+        'PASSWORD':'prueba',
         'HOST':'localhost',
         'PORT':5432,    
     }

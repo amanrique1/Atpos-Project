@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.Producto',
+    'Producto',
     'rest_framework',
 ]
 
@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'AtPos_IsisConsulting.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'AtPos',
+        'NAME': 'atpos',
         'USER':'postgres',
         'PASSWORD':'admin',
         'HOST':'localhost',

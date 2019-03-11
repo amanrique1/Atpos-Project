@@ -3,8 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Producto(models.Model):
-
-	codigoBarras= models.CharField(primary_key=True,max_length=30)
+	codigoBarras= models.CharField(max_length=30)
 	nombre= models.CharField(max_length=70)
 	cantidadMedida= models.IntegerField()
 	unidadMedida= models.CharField(max_length=10)

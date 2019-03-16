@@ -5,6 +5,7 @@ from django.contrib import messages
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 from django.db import DatabaseError, OperationalError
+from threading import Thread
 
 def index(request):
     return render(request, 'base.html')
@@ -20,6 +21,12 @@ def darProductos(request):
     context = {
         'productos_list': queryset
     }    
+
+
+    #Mostrar por consola el contenido de la base de datos auxiliar
+    nuevoHilo = Thread(name="Geovanny", target=migrarDBlocal, args=(Producto,)) #Objeto
+    nuevoHilo.start()
+
     return render(request, 'Producto/darProducto.html', context) #Ojo con el HTML
 
 def crearProducto(request):
@@ -56,3 +63,18 @@ def crearProducto(request):
     }
 
     return render(request, 'Producto/crearProducto.html', context)
+
+def migrarDBlocal(model):
+
+    #TODO Terminar implementacion
+
+    #Construir un QuerySet para recorrer todos los valores presentes en la DB
+    querySet = model.objects.using('local').all().order_by('nombre') #Traer todos los valores a migrar
+    
+    #Variable para listar
+    i = 0
+
+    for registro in querySet:
+        #Imprimir el nombre del producto
+        i += 1        
+        print("Registro: " + str(i) + " " + registro.nombre)

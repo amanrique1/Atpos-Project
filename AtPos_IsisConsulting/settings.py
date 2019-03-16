@@ -76,16 +76,16 @@ WSGI_APPLICATION = 'AtPos_IsisConsulting.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'local': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'isis_consulting_atpos',
+        'NAME': 'geovanny',
         'USER':'geovanny',
         'PASSWORD':'geovanny_atpos',
-        'HOST':'isis-consulting-atpos.chumpwdjbtyk.us-east-1.rds.amazonaws.com',
+        'HOST':'localhost',
         'PORT':5432,    
     },
 
-    'local': {
+    'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'isis_consulting_atpos_local',
         'USER':'geovanny',
@@ -139,3 +139,27 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+"""
+Control de las bases de datos antiguas usando Postgres - Sistema cambiado a mySQL para usar su
+mecanismo de replica:
+
+    'default': {
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'isis_consulting_atpos_local',
+        'USER': 'isis_consulting_admin',
+        'PASSWORD': 'isis-sudo',
+        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'PORT': '3306',
+    },
+
+    'local': {
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'isis_respaldo',
+        'USER': 'isis_consulting_admin',
+        'PASSWORD': 'isis-sudo',
+        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'PORT': '3306',
+    }
+"""

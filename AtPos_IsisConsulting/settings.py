@@ -76,16 +76,16 @@ WSGI_APPLICATION = 'AtPos_IsisConsulting.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    'local': {
+    'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'geovanny',
-        'USER':'geovanny',
-        'PASSWORD':'geovanny_atpos',
-        'HOST':'localhost',
+        'NAME': 'atpos',
+        'USER':'admon_test',
+        'PASSWORD':'admongeovanny',
+        'HOST':'geovanny-pruebas.chumpwdjbtyk.us-east-1.rds.amazonaws.com',
         'PORT':5432,    
     },
 
-    'default': {
+    'local': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'isis_consulting_atpos_local',
         'USER':'geovanny',

@@ -2,8 +2,6 @@ from django.db import models
 from apps.Producto.models import EspecificacionProducto
 
 # Create your models here.
-class Caja(models.Model):
-
 class Factura(models.Model):
 	fecha=models.DateField()
 	metodoDePago=models.CharField(max_length=30)
@@ -11,8 +9,8 @@ class Factura(models.Model):
 
 class Venta(models.Model):
 	class Meta:
-        unique_together = (('especificacionProducto', 'factura'),)
+		unique_together = ('especificacionProducto', 'factura')
         
-	especificacionProducto=models.ForeignKey(EspecificacionProducto,null=False,blank=True)
-	factura=models.OneToOne(Factura,null=False,blank=True,on_delete=models.CASCADE)
+	especificacionProducto=models.ForeignKey(EspecificacionProducto,null=True,blank=True,on_delete=models.SET_NULL)
+	factura=models.OneToOneField(Factura,null=False,blank=True,on_delete=models.CASCADE)
 	cantidad=models.IntegerField()

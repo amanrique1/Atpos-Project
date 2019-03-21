@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from apps.Negocio.models import *
+from apps.Producto.models import PuntoDeVentaProds
 
 # Create your views here.
 def listarInventario(request,idPVenta):

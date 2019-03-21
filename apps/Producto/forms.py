@@ -19,15 +19,13 @@ class EspecificacionProductoForm(forms.ModelForm):
     class Meta:        
         model = EspecificacionProducto #Le dice a Djando que este form es para los modelos de producto
         #Campos a recibir
-        fields = ['idEspecificacionProducto', 'precio', 'precioUnidadMedida', 'fechaVencimiento', 'producto', 'lote','puntoDeVenta']
-        labels={'idEspecificacionProducto':'Id EspecificacionProducto', 'precio':'Precio', 'precioUnidadMedida':'Precio Unidad Medida', 'fechaVencimiento':'Fecha Vencimiento', 'producto':'Producto', 'lote':'Lote','puntoDeVenta':'Punto de Venta'}
+        fields = ['idEspecificacionProducto', 'precio', 'precioUnidadMedida', 'fechaVencimiento', 'producto', 'puntoDeVenta']
+        labels={'idEspecificacionProducto':'Id EspecificacionProducto', 'precio':'Precio', 'precioUnidadMedida':'Precio Unidad Medida', 'fechaVencimiento':'Fecha Vencimiento', 'producto':'Producto', 'puntoDeVenta':'Punto de Venta'}
         widgets={'idEspecificacionProducto':forms.TextInput(attrs={'class':'form-control'}),
                 'precio':forms.TextInput(attrs={'class':'form-control'}),
                 'precioUnidadMedida':forms.NumberInput(attrs={'class':'form-control'}), 
-                'unidadMedida':forms.TextInput(attrs={'class':'form-control'}),
                 'fechaVencimiento':forms.DateInput(attrs={'class':'form-control'}), 
                 'producto':forms.Select(attrs={'class':'form-control'}),
-                'lote':forms.CheckboxSelectMultiple(attrs={'class':'form-control'})
                 'puntoDeVenta':forms.Select(attrs={'class':'form-control'})}
     
 

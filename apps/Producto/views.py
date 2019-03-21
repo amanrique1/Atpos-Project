@@ -42,6 +42,27 @@ def darProductos(request):
 
     return render(request, 'Producto/darProducto.html', context) #Ojo con el HTML
 
+def darEspecificacacionesProductos(request):
+    verificarMigracion('default', 'local', Producto) #Realizar verificacion de la DB local para migracion
+
+    queryset = None #Inicializar variable
+
+    if verificarConexion('default'):
+        queryset = Producto.objects.all()[:10] #QuerySets para interactuar con el SMBD
+    else:
+        queryset = Producto.objects.using('local').all()[:10] #QuerySets para interactuar con el SMBD
+    
+    #Ejemplo de un QuerySet para cambiar de BD 
+    
+    # This will run on the 'other' database.
+    # Producto.objects.using('otra base de datos definida en DATABASES').all()
+
+    context = {
+        'espList': queryset
+    }
+
+    return render(request, 'Producto/darEspecificacacionesProductos.html', context) #Ojo con el HTML
+
 def crearProducto(request):
     verificarMigracion('default', 'local', Producto) #Realizar verificacion de la DB local para migracion
 

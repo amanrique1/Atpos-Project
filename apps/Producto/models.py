@@ -10,9 +10,9 @@ class Producto(models.Model):
 	unidadMedida= models.CharField(max_length=10)
 	descripcion= models.TextField()
 	marca= models.CharField(max_length=50)
+	def __str__(self):
+		return '{}'.format(self.nombre)
 
-class Lote(models.Model):
-	fechaVencimiento=models.DateField()
 
 class EspecificacionProducto(models.Model):
 
@@ -21,8 +21,10 @@ class EspecificacionProducto(models.Model):
 	precioUnidadMedida=models.FloatField()
 	fechaVencimiento=models.DateField()
 	producto=models.OneToOneField(Producto,null=False,blank=True,on_delete=models.CASCADE)
-	lote=models.ForeignKey(Lote,null=True,blank=True,on_delete=models.SET_NULL)
 	puntoDeVenta=models.ForeignKey(PuntoDeVenta,null=True,blank=True,on_delete=models.CASCADE )
+	def __str__(self):
+		return '{}'.format(self.producto.nombre)
+
 	
 
 class TipoDeProducto(models.Model):

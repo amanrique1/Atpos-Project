@@ -4,6 +4,6 @@ from apps.Negocio.models import *
 # Create your views here.
 def listarInventario(request,idPVenta):
 	
-	inventario=PuntoDeVentaProds.objects.all().get(puntoDeVenta=idPVenta)
+	inventario=PuntoDeVentaProds.objects.all().get(puntoDeVenta_id=idPVenta)
 	contexto={'inventario':inventario}
 	return render(request, 'Negocio/listarInventario.html',contexto)

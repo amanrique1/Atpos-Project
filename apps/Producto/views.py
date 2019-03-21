@@ -1,6 +1,6 @@
-from .models import Producto
+from apps.models import Producto,EspecificacionProducto
 from django.shortcuts import render, redirect
-from .forms import ProductoForm
+from apps.Producto.forms import ProductoForm,EspecificacionProductoForm
 from django.contrib import messages
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
@@ -72,6 +72,37 @@ def crearProducto(request):
     }
 
     return render(request, 'Producto/crearProducto.html', context)
+
+def crearEspecificacionProducto(request):
+    verificarMigracion('default', 'local', Producto) #Realizar verificacion de la DB local para migracion
+
+    if request.method == 'POST':
+        form = EspecificacionProductoForm(request.POST)
+        if form.is_valid():
+            espProd = form.save(commit=False) #Traer solo el valor de objeto form
+           
+            #Ejemplos de .save() en otras BD
+            #producto.save(using='la base de datos deseada')
+            #Intentar guardar en la base de datos primaria, si no guardar en la local
+            try:
+                espProd.save()
+            except (OperationalError, DatabaseError) as excepcion: #Error producido por la mala operacion de la BD principal
+                print("Se ha perdido la conexion a la base de datos global, cambiando a sistema auxiliar")
+                # print(str(excepcion)) Imprimir el error
+                espProd.save(using='local') #Guardar la informacion en la base de datos local                        
+            
+            messages.add_message(request, messages.SUCCESS, 'El producto ha sido creado satisfactoriamente')
+            return HttpResponse("Producto creado satisfactoriamente")
+        else:
+            print(form.errors)
+    else:
+        form = ProductoForm()
+
+    context = {
+        'form': form,
+    }
+
+    return render(request, 'Producto/crearEspecificacionProducto.html', context)
 
 def migrarDBlocal(model):
 

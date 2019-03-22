@@ -6,7 +6,7 @@ from apps.Negocio.forms import *
 # Create your views here.
 def listarInventario(request,idPVenta):
 	
-	inventario=PuntoDeVentaProds.objects.all().get(puntoDeVenta_id=idPVenta)
+	inventario=PuntoDeVentaProds.objects.all().filter(puntoDeVenta_id=idPVenta).values()
 	contexto={'inventario':inventario}
 	return render(request, 'Negocio/listarInventario.html',contexto)
 
@@ -18,7 +18,8 @@ def actualizarInventario(request,idPVenta):
 	else:
 		form=InventarioForm(request.POST,instance=inventario)
 		if form.is_valid():
-			form.save()
+			producto = form.save(commit=False) 
+			producto.save()
 		return redirect('../darInventario/'+idPVenta)
 	return render(request,'Negocio/inventarioForm.html',{'formu':form})
 

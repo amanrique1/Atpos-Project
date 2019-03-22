@@ -71,28 +71,25 @@
             var indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
             var dataBase = null;
             
-            function startDB() {
-                
-                dataBase = indexedDB.open("object", 1);                
-                dataBase.onupgradeneeded = function (e) {
-                
+           
+            function startDB() {                
+                dataBase = indexedDB.open("object", 1);                                
+                dataBase.onupgradeneeded = function (e) {                
                     var active = dataBase.result;                    
-                    var object = active.createObjectStore('people', { keyPath : 'id', autoIncrement : true });
-                    object.createIndex('by_codigoBarrras', 'codigoBarras', { unique : true });   
-                    
+                    var object = active.createObjectStore('people', { keyPath : 'id', autoIncrement : true });                    
+                    //object.createIndex('by_codigoBarrras', 'codigoBarras', { unique : true });                                       
                 };
                 
                 dataBase.onsuccess = function (e) {
-                    alert('Database loaded');
-                    //loadAll();
+                    alert('Database loaded');                    
                 };
                 
                 dataBase.onerror = function (e) {
                     alert('Error loading database');
-                };
+                };              
             }
             
-            function add() {
+            function addProducto() {
                 
                 var active = dataBase.result;
                 var data = active.transaction(["people"], "readwrite");
@@ -124,14 +121,14 @@
                 };
                 
                 if (navigator.onLine) {
-                    hacerPost(datosPost);
+                    hacerPostProducto(datosPost);
                 }                
             }
             /**
              * Permite hacer una peticion de POST al Backend
              * @param bodyDiccionario Es un diccionario con el cuerpo de la peticion de POST 
              */
-            function hacerPost(bodyDiccionario) {
+            function hacerPostProducto(bodyDiccionario) {
                 console.log("[ServiceWorker] Intentando hacer el POST");
                 
                     var xhr = new XMLHttpRequest();
@@ -163,7 +160,7 @@
                 object.openCursor().onsuccess = function (e) {
                     
                     var result = e.target.result;
-                    
+                    let clave = null;
                     var dictRecord = {};
                     
                     if (result === null) {
@@ -171,13 +168,21 @@
                     }
                     //Correr el cursor
                     for (var key in result.value) {
+                        if (clave === null) {
+                            clave = key;
+                        }                        
                         dictRecord[key] = result.value[key];
                     }
                     
                     console.log("Verificacion diccionario: ",JSON.stringify(dictRecord));
                     console.log("Haciendo post de la pk: ", dictRecord[0]);
                     if (navigator.onLine) {
-                        hacerPost(dictRecord);
+                        if (clave === 'codigoBarras'){
+                            hacerPostProducto(dictRecord);
+                        }
+                        if (clave === 'nombre'){
+                            hacerPostPunto(dictRecord);
+                        }                        
                     }
                     
                     else {
@@ -195,13 +200,223 @@
                   //Vacio 
                 }
         }
+
+        // Punto de Venta
+
+
+        function addPunto() {
+                
+                var active = dataBase.result;
+                var data = active.transaction(["people"], "readwrite");
+                var object = data.objectStore("people"); 
+                
+                const datosPost = {
+                    nombre : document.querySelector("#nombrePunto").value,
+                    ciudad : document.querySelector("#ciudadPunto").value.toLowerCase(),
+                    direccion : document.querySelector("#direccionPunto").value,                   
+                };
+
+                console.log("Datos de las etiquetas: " + JSON.stringify(datosPost));
+                var request = object.put(datosPost); 
+                request.onerror = function (e) {
+                    alert(request.error.name + '\n\n' + request.error.message);
+                };
+        
+                data.oncomplete = function (e) {
+                    document.querySelector("#nombrePunto").value='',
+                    document.querySelector("#ciudadPunto").value='',
+                    document.querySelector("#direccionPunto").value='',                          
+                    alert('Object successfully added');
+                    //loadAll();
+                };
+                
+                if (navigator.onLine) {
+                    hacerPostPunto(datosPost);
+                }                
+            }
+            /**
+             * Permite hacer una peticion de POST al Backend
+             * @param bodyDiccionario Es un diccionario con el cuerpo de la peticion de POST 
+             */
+            function hacerPostPunto(bodyDiccionario) {
+                console.log("[ServiceWorker] Intentando hacer el POST");
+                
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('POST', 'http://localhost:8080/negocio/crearPuntoDeVenta/', true);
+                    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                    xhr.onload = function () {
+                        // do something to response
+                        // console.log(this.responseText);
+                    };
+                    let rsp = '';
+                    for (var key in bodyDiccionario) {
+                        // check if the property/key is defined in the object itself, not in parent
+                        if (bodyDiccionario.hasOwnProperty(key)) {           
+                            console.log(key, bodyDiccionario[key]);
+                            rsp += key + "=" +bodyDiccionario[key];
+                            rsp += '&';
+                        }
+                    }
+                    console.log("La cadena respuesta POST intento #2 es: "+ rsp);
+                    xhr.send(rsp);
+                
+            }// Punto de Venta
+
+
+        function addPunto() {
+                
+                var active = dataBase.result;
+                var data = active.transaction(["people"], "readwrite");
+                var object = data.objectStore("people"); 
+                
+                const datosPost = {
+                    nombre : document.querySelector("#nombrePunto").value,
+                    ciudad : document.querySelector("#ciudadPunto").value.toLowerCase(),
+                    direccion : document.querySelector("#direccionPunto").value,                   
+                };
+
+                console.log("Datos de las etiquetas: " + JSON.stringify(datosPost));
+                var request = object.put(datosPost); 
+                request.onerror = function (e) {
+                    alert(request.error.name + '\n\n' + request.error.message);
+                };
+        
+                data.oncomplete = function (e) {
+                    document.querySelector("#nombrePunto").value='',
+                    document.querySelector("#ciudadPunto").value='',
+                    document.querySelector("#direccionPunto").value='',                          
+                    alert('Object successfully added');
+                    //loadAll();
+                };
+                
+                if (navigator.onLine) {
+                    hacerPostPunto(datosPost);
+                }                
+            }
+            /**
+             * Permite hacer una peticion de POST al Backend
+             * @param bodyDiccionario Es un diccionario con el cuerpo de la peticion de POST 
+             */
+            function hacerPostPunto(bodyDiccionario) {
+                console.log("[ServiceWorker] Intentando hacer el POST");
+                
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('POST', 'http://localhost:8080/negocio/crearPuntoDeVenta/', true);
+                    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                    xhr.onload = function () {
+                        // do something to response
+                        // console.log(this.responseText);
+                    };
+                    let rsp = '';
+                    for (var key in bodyDiccionario) {
+                        // check if the property/key is defined in the object itself, not in parent
+                        if (bodyDiccionario.hasOwnProperty(key)) {           
+                            console.log(key, bodyDiccionario[key]);
+                            rsp += key + "=" +bodyDiccionario[key];
+                            rsp += '&';
+                        }
+                    }
+                    console.log("La cadena respuesta POST intento #2 es: "+ rsp);
+                    xhr.send(rsp);
+                
+            }  
+
+
+            // Especificacion Producto
+
+
+            function addEspecificacionProducto() {
+                
+                var active = dataBase.result;
+                var data = active.transaction(["people"], "readwrite");
+                var object = data.objectStore("people"); 
+                
+                const datosPost = {
+                    idEspecificacionProducto : document.querySelector("#idEspecificacionProducto").value,
+                    precio : document.querySelector("#precioEspecificacionProducto").value,
+                    precioUnidadMedida : document.querySelector("#precioMedidaEspecificacionProducto").value,
+                    fechaVencimiento : document.querySelector("#fechaVencimiento").value,
+                    producto : document.querySelector("#idCodigoBarras").value,
+                    puntoDeVenta : document.querySelector("#idPuntoVenta").value,                    
+                };
+
+                console.log("Datos de las etiquetas: " + JSON.stringify(datosPost));
+                var request = object.put(datosPost); 
+                request.onerror = function (e) {
+                    alert(request.error.name + '\n\n' + request.error.message);
+                };
+        
+                data.oncomplete = function (e) {
+                    document.querySelector("#idEspecificacionProducto").value='',
+                    document.querySelector("#precioEspecificacionProducto").value='',
+                    document.querySelector("#precioMedidaEspecificacionProducto").value='',
+                    document.querySelector("#fechaVencimiento").value='',
+                    document.querySelector("#idCodigoBarras").value='',
+                    document.querySelector("#idPuntoVenta").value='',                          
+                    alert('Object successfully added');
+                    //loadAll();
+                };
+                
+                if (navigator.onLine) {
+                    hacerPostEspecificacionProducto(datosPost);
+                }                
+            }
+            /**
+             * Permite hacer una peticion de POST al Backend
+             * @param bodyDiccionario Es un diccionario con el cuerpo de la peticion de POST 
+             */
+            function hacerPostEspecificacionProducto(bodyDiccionario) {
+                console.log("[ServiceWorker] Intentando hacer el POST");
+                
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('POST', 'http://localhost:8080/producto/crearEspecificacionesProducto/', true);
+                    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                    xhr.onload = function () {
+                        // do something to response
+                        // console.log(this.responseText);
+                    };
+                    let rsp = '';
+                    for (var key in bodyDiccionario) {
+                        // check if the property/key is defined in the object itself, not in parent
+                        if (bodyDiccionario.hasOwnProperty(key)) {           
+                            console.log(key, bodyDiccionario[key]);
+                            rsp += key + "=" +bodyDiccionario[key];
+                            rsp += '&';
+                        }
+                    }
+                    console.log("La cadena respuesta POST intento #2 es: "+ rsp);
+                    xhr.send(rsp);
+                
+            }        
+
         </script>
     </head>
     <body onload="startDB();">
+        <div>
         <form class="myForm" >
             <h4>Crear Producto</h4>            
             <div>
-            <input type="number" id="codigoBarras" placeholder="Ingrese el codigo de barras" />            
+            <input type="text" id="codigoBarras" placeholder="Ingrese el codigo de barras" />            
+            <input type="text" id="nombre" placeholder="Enter name" />
+            </div>
+            <div>            
+            <input type="number" id="cantidadMedida" placeholder="Enter cantidadMedida" />            
+            <input type="text" id="unidadMedida" placeholder="Enter unidadMedida" />
+            </div>
+            <div>
+            <input type="text" id="descripcion" placeholder="Enter descripcion" />            
+            <input type="text" id="marca" placeholder="Enter marca" />
+            </div>
+            <div>
+                <button type="button" onclick="addProducto();">Save</button>
+                <button type="button" onclick="migrarDB();">Migrar la base de datos a global</button>
+            </div>            
+        </form>
+
+        <form class="myForm" >
+            <h4>Crear Factura</h4>            
+            <div>
+            <input type="date" id="fechaFactura" placeholder="Ingrese el codigo de barras" />            
             <input type="text" id="nombre" placeholder="Enter name" />
             </div>
             <div>            
@@ -216,7 +431,42 @@
                 <button type="button" onclick="add();">Save</button>
                 <button type="button" onclick="migrarDB();">Migrar la base de datos a global</button>
             </div>            
-            </form>
+        </form>
+        </div>
+        <div>
+        <form class="myForm" >
+            <h4>Especificacion Producto</h4>            
+            <div>
+            <input type="text" id="idEspecificacionProducto" placeholder="Ingrese el ID de Especificacion" />            
+            <input type="number" id="precioEspecificacionProducto" placeholder="Ingrese el precio" />
+            </div>
+            <div>            
+            <input type="number" id="precioMedidaEspecificacionProducto" placeholder="Ingrese el precio por unidad de medida" />            
+            <input type="date" id="fechaVencimiento" placeholder="Ingrese la fecha de vencimiento" />
+            </div>
+            <div>
+            <input type="number" id="idCodigoBarras" placeholder="Ingrese el codigo de barras del producto a relacionar" />            
+            <input type="number" id="idPuntoVenta" placeholder="Ingrese el ID del punto de venta" />
+            </div>
+            <div>
+                <button type="button" onclick="addEspecificacionProducto();">Save</button>
+                <button type="button" onclick="migrarDB();">Migrar la base de datos a global</button>
+            </div>            
+        </form>
+
+        <form class="myForm" >
+            <h4>Punto de venta</h4>            
+            <div>
+            <input type="text" id="nombrePunto" placeholder="Nombre del punto"/>            
+            <input type="text" id="ciudadPunto" placeholder="Ciudad del punto" />
+            <input type="text" id="direccionPunto" placeholder="Direccion del punto" />
+            </div>            
+            <div>
+                <button type="button" onclick="addPunto();">Save</button>
+                <button type="button" onclick="migrarDB();">Migrar la base de datos a global</button>
+            </div>            
+        </form>
+    </div>   
     </body>
     
     <!-- Footer -->

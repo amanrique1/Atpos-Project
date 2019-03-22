@@ -1,6 +1,6 @@
 #Formulario para recaudar datos del usuario
 from django import forms
-from apps.Producto.models import Producto,EspecificacionProducto
+from apps.Producto.models import Producto, EspecificacionProducto, Inventario
 
 class ProductoForm(forms.ModelForm):
     class Meta:        
@@ -29,4 +29,7 @@ class EspecificacionProductoForm(forms.ModelForm):
                 'puntoDeVenta':forms.Select(attrs={'class':'form-control'})}
     
 
-
+class InventarioForm(forms.ModelForm):
+    class Meta:
+        model = Inventario
+        fields = ['especificacionProducto', 'cantidad']

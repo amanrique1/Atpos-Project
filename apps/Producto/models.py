@@ -31,6 +31,11 @@ class TipoDeProducto(models.Model):
 	nombreTipo=models.CharField(primary_key=True,max_length=50)
 	metodoAlmacenamiento=models.CharField(max_length=50)
 
+class Inventario(models.Model):
+	especificacionProducto = models.ForeignKey(EspecificacionProducto,null=False,blank=True,on_delete=models.CASCADE)
+	cantidad=models.IntegerField()
+
+
 class Categoria(models.Model):
 	nombreCategoria=models.CharField(primary_key=True,max_length=50)
 	perecedero=models.BooleanField()

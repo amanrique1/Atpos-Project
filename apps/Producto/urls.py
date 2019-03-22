@@ -9,5 +9,7 @@ urlpatterns = [
     url(r'^darProductos/', darProductos), #Vista asociada
     url(r'^crearProducto/$', csrf_exempt(crearProducto), name='crearPorducto'),  
     url(r'^darEspecificacionesProducto/', darEspecificacacionesProductos), #Vista asociada
-    url(r'^crearEspecificacionesProducto/$', csrf_exempt(crearEspecificacionProducto), name='crearEspecificacionProducto'),    
+    url(r'^crearEspecificacionesProducto/$', csrf_exempt(crearEspecificacionProducto), name='crearEspecificacionProducto'),
+    url(r'^darInventario/', darEspecificacacionesProductos), #Vista asociada
+    url(r'^crearInventario/$', csrf_exempt(crearInventario), name='crearEspecificacionProducto'),        
 ]

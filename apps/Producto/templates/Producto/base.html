@@ -182,7 +182,16 @@
                         }
                         if (clave === 'nombre'){
                             hacerPostPunto(dictRecord);
-                        }                        
+                        }
+                        if(clave === 'idEspecificacionProducto') {
+                            hacerPostEspecificacionProducto(dictRecord);
+                        }
+                        if(clave === 'fecha') {
+                            hacerPostFactura(dictRecord);
+                        }
+                        if (clave === 'especificacionProducto') {
+                            hacerPostVenta(dictRecord);
+                        }                       
                     }
                     
                     else {
@@ -387,7 +396,189 @@
                     console.log("La cadena respuesta POST intento #2 es: "+ rsp);
                     xhr.send(rsp);
                 
-            }        
+            } 
+
+            // Crear Factura
+
+
+            function addFactura() {
+                
+                var active = dataBase.result;
+                var data = active.transaction(["people"], "readwrite");
+                var object = data.objectStore("people"); 
+                
+                const datosPost = {
+                    fecha : document.querySelector("#fechaFactura").value,
+                    metodoDePago : document.querySelector("#facturaMetodoPago").value,
+                    pagado : false                    
+                };
+
+                console.log("Datos de las etiquetas: " + JSON.stringify(datosPost));
+                var request = object.put(datosPost); 
+                request.onerror = function (e) {
+                    alert(request.error.name + '\n\n' + request.error.message);
+                };
+        
+                data.oncomplete = function (e) {
+                    document.querySelector("#fechaFactura").value='',
+                    document.querySelector("#facturaMetodoPago").value='',                                   
+                    alert('Object successfully added');
+                    //loadAll();
+                };
+                
+                if (navigator.onLine) {
+                    hacerPostFactura(datosPost);
+                }                
+            }
+            /**
+             * Permite hacer una peticion de POST al Backend
+             * @param bodyDiccionario Es un diccionario con el cuerpo de la peticion de POST 
+             */
+            function hacerPostFactura(bodyDiccionario) {
+                console.log("[ServiceWorker] Intentando hacer el POST");
+                
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('POST', 'http://localhost:8080/venta/crearFactura/', true);
+                    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                    xhr.onload = function () {
+                        // do something to response
+                        // console.log(this.responseText);
+                    };
+                    let rsp = '';
+                    for (var key in bodyDiccionario) {
+                        // check if the property/key is defined in the object itself, not in parent
+                        if (bodyDiccionario.hasOwnProperty(key)) {           
+                            console.log(key, bodyDiccionario[key]);
+                            rsp += key + "=" +bodyDiccionario[key];
+                            rsp += '&';
+                        }
+                    }
+                    console.log("La cadena respuesta POST intento #2 es: "+ rsp);
+                    xhr.send(rsp);
+                
+            }
+
+
+             // Crear Venta
+
+
+            function addVenta() {
+                
+                var active = dataBase.result;
+                var data = active.transaction(["people"], "readwrite");
+                var object = data.objectStore("people"); 
+                
+                const datosPost = {
+                    especificacionProducto : document.querySelector("#idVentaEspecificacionProducto").value,
+                    factura : document.querySelector("#idVentaFactura").value,
+                    cantidad : document.querySelector("#ventaCantidad").value                    
+                };
+
+                console.log("Datos de las etiquetas: " + JSON.stringify(datosPost));
+                var request = object.put(datosPost); 
+                request.onerror = function (e) {
+                    alert(request.error.name + '\n\n' + request.error.message);
+                };
+        
+                data.oncomplete = function (e) {
+                    document.querySelector("#idVentaEspecificacionProducto").value='',
+                    document.querySelector("#idVentaFactura").value='',
+                    document.querySelector("#ventaCantidad").value='',                                   
+                    alert('Object successfully added');
+                    //loadAll();
+                };
+                
+                if (navigator.onLine) {
+                    hacerPostFactura(datosPost);
+                }                
+            }
+            /**
+             * Permite hacer una peticion de POST al Backend
+             * @param bodyDiccionario Es un diccionario con el cuerpo de la peticion de POST 
+             */
+            function hacerPostVenta(bodyDiccionario) {
+                console.log("[ServiceWorker] Intentando hacer el POST");
+                
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('POST', 'http://localhost:8080/venta/crearVentas/', true);
+                    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                    xhr.onload = function () {
+                        // do something to response
+                        // console.log(this.responseText);
+                    };
+                    let rsp = '';
+                    for (var key in bodyDiccionario) {
+                        // check if the property/key is defined in the object itself, not in parent
+                        if (bodyDiccionario.hasOwnProperty(key)) {           
+                            console.log(key, bodyDiccionario[key]);
+                            rsp += key + "=" +bodyDiccionario[key];
+                            rsp += '&';
+                        }
+                    }
+                    console.log("La cadena respuesta POST intento #2 es: "+ rsp);
+                    xhr.send(rsp);
+                
+            }
+
+
+             // Crear Inventario
+
+
+            function addInventario() {
+                
+                var active = dataBase.result;
+                var data = active.transaction(["people"], "readwrite");
+                var object = data.objectStore("people"); 
+                
+                const datosPost = {
+                    especificacionProducto : document.querySelector("#idInvEspecificacionProducto").value,                    
+                    cantidad : document.querySelector("#unidades").value                    
+                };
+
+                console.log("Datos de las etiquetas: " + JSON.stringify(datosPost));
+                var request = object.put(datosPost); 
+                request.onerror = function (e) {
+                    alert(request.error.name + '\n\n' + request.error.message);
+                };
+        
+                data.oncomplete = function (e) {
+                    document.querySelector("#idInvEspecificacionProducto").value='',
+                    document.querySelector("#unidades").value='',                                            
+                    alert('Object successfully added');
+                    //loadAll();
+                };
+                
+                if (navigator.onLine) {
+                    hacerPostInventario(datosPost);
+                }                
+            }
+            /**
+             * Permite hacer una peticion de POST al Backend
+             * @param bodyDiccionario Es un diccionario con el cuerpo de la peticion de POST 
+             */
+            function hacerPostInventario(bodyDiccionario) {
+                console.log("[ServiceWorker] Intentando hacer el POST");
+                
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('POST', 'http://localhost:8080/producto/crearInventario/', true);
+                    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                    xhr.onload = function () {
+                        // do something to response
+                        // console.log(this.responseText);
+                    };
+                    let rsp = '';
+                    for (var key in bodyDiccionario) {
+                        // check if the property/key is defined in the object itself, not in parent
+                        if (bodyDiccionario.hasOwnProperty(key)) {           
+                            console.log(key, bodyDiccionario[key]);
+                            rsp += key + "=" +bodyDiccionario[key];
+                            rsp += '&';
+                        }
+                    }
+                    console.log("La cadena respuesta POST intento #2 es: "+ rsp);
+                    xhr.send(rsp);
+                
+            }       
 
         </script>
     </head>
@@ -416,24 +607,47 @@
         <form class="myForm" >
             <h4>Crear Factura</h4>            
             <div>
-            <input type="date" id="fechaFactura" placeholder="Ingrese el codigo de barras" />            
-            <input type="text" id="nombre" placeholder="Enter name" />
-            </div>
-            <div>            
-            <input type="number" id="cantidadMedida" placeholder="Enter cantidadMedida" />            
-            <input type="text" id="unidadMedida" placeholder="Enter unidadMedida" />
-            </div>
+            <input type="date" id="fechaFactura" placeholder="Fecha de facturación" />            
+            <input type="text" id="facturaMetodoPago" placeholder="Ingrese el metodo de pago" />
+            </div>            
             <div>
-            <input type="text" id="descripcion" placeholder="Enter descripcion" />            
-            <input type="text" id="marca" placeholder="Enter marca" />
-            </div>
-            <div>
-                <button type="button" onclick="add();">Save</button>
+                <button type="button" onclick="addFactura();">Save</button>
                 <button type="button" onclick="migrarDB();">Migrar la base de datos a global</button>
             </div>            
         </form>
         </div>
         <div>
+        <form class="myForm" >
+            <h4>Crear Venta</h4>            
+            <div>
+                <input type="number" id="idVentaEspecificacionProducto" placeholder="Ingrese el ID del producto especifico (EspecificacionProducto)" />            
+                <input type="number" id="idVentaFactura" placeholder="Ingrese el ID de la factura" />
+                <input type="number" id="ventaCantidad" placeholder="Ingrese la cantidad a comprar" />
+            </div>            
+            <div>
+                <button type="button" onclick="addVenta();">Save</button>
+                <button type="button" onclick="migrarDB();">Migrar la base de datos a global</button>
+            </div>            
+         </form>
+
+         <form class="myForm" >
+                <h4>Crear Inventario Producto</h4>            
+                <div>
+                    <input type="number" id="idInvEspecificacionProducto" placeholder="Ingrese el ID del producto especifico (EspecificacionProducto)" />                                
+                    <input type="number" id="unidades" placeholder="Ingrese la cantidad a comprar" />
+                </div>            
+                <div>
+                    <button type="button" onclick="addInventario();">Save</button>
+                    <button type="button" onclick="migrarDB();">Migrar la base de datos a global</button>
+                    <button type="button" id="redirigir" class="float-left submit-button" >Ver inventario</button>
+                            <script type="text/javascript">
+                                document.getElementById("redirigir").onclick = function () {
+                                    location.href = "localhost:8080/producto/darInventario/";
+                                };
+                            </script>
+                </div>            
+             </form>
+         </div>
         <form class="myForm" >
             <h4>Especificacion Producto</h4>            
             <div>

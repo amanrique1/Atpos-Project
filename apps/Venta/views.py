@@ -24,7 +24,7 @@ def crearFactura(request):
         if form.is_valid():
             factura = form.save(commit=False) 
             factura.save()
-            return redirect('../darProductos')
+            #return redirect('../darProductos')
         else:
             print(form.errors)
     else:

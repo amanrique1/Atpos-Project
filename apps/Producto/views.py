@@ -8,7 +8,7 @@ from apps.Producto.models import *
 #varios threads para migrar la informacion, solo uno
 
 def index(request):
-    return render(request, 'base.html')
+    return render(request, 'Producto/base.html')
 
 def darProductos(request):
        

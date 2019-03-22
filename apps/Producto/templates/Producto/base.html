@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    {% load pwa %}
+    {% load static %}
+    <head>
+        {% progressive_web_app_meta %}        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% block head %}
+        <title>ISIS_Consulting</title>
+        {% endblock %}
+
+        <style>
+            .myForm {
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            font-size: 0.8em;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            }
+            
+            .myForm * {
+            box-sizing: border-box;
+            }
+            
+            .myForm label {
+            font-size: 0.9em;
+            }
+            
+            .myForm .audioOnly {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+            }
+            
+            .myForm input {
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            font-size: 0.9em;
+            padding: 0.5em;
+            }
+            
+            .myForm input[type="email"],
+            .myForm input[type="password"] {
+            width: 12em;
+            }
+            
+            .myForm button {
+            padding: 0.7em;
+            border-radius: 0.5em;
+            background: #eee;
+            border: none;
+            font-weight: bold;
+            margin-left: 1.5em;
+            }
+            
+            .myForm button:hover {
+            background: #ccc;
+            cursor: pointer;
+            }
+            </style>
+
+        <script type="text/javascript">
+            var indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+            var dataBase = null;
+            
+            function startDB() {
+                
+                dataBase = indexedDB.open("object", 1);                
+                dataBase.onupgradeneeded = function (e) {
+                
+                    var active = dataBase.result;                    
+                    var object = active.createObjectStore('people', { keyPath : 'id', autoIncrement : true });
+                    object.createIndex('by_codigoBarrras', 'codigoBarras', { unique : true });   
+                    
+                };
+                
+                dataBase.onsuccess = function (e) {
+                    alert('Database loaded');
+                    //loadAll();
+                };
+                
+                dataBase.onerror = function (e) {
+                    alert('Error loading database');
+                };
+            }
+            
+            function add() {
+                
+                var active = dataBase.result;
+                var data = active.transaction(["people"], "readwrite");
+                var object = data.objectStore("people"); 
+                
+                const datosPost = {
+                    codigoBarras : document.querySelector("#codigoBarras").value,
+                    nombre : document.querySelector("#nombre").value.toLowerCase(),
+                    cantidadMedida : document.querySelector("#cantidadMedida").value,
+                    unidadMedida : document.querySelector("#unidadMedida").value,
+                    descripcion : document.querySelector("#descripcion").value,
+                    marca : document.querySelector("#marca").value
+                };
+                console.log("Datos de las etiquetas: " + JSON.stringify(datosPost));
+                var request = object.put(datosPost); 
+                request.onerror = function (e) {
+                    alert(request.error.name + '\n\n' + request.error.message);
+                };
+        
+                data.oncomplete = function (e) {
+                    document.querySelector("#codigoBarras").value = '';
+                    document.querySelector("#nombre").value = '';
+                    document.querySelector("#cantidadMedida").value = '';
+                    document.querySelector("#unidadMedida").value = '';
+                    document.querySelector("#descripcion").value = '';
+                    document.querySelector("#marca").value = '';                    
+                    alert('Object successfully added');
+                    //loadAll();
+                };
+                
+                if (navigator.onLine) {
+                    hacerPost(datosPost);
+                }                
+            }
+            /**
+             * Permite hacer una peticion de POST al Backend
+             * @param bodyDiccionario Es un diccionario con el cuerpo de la peticion de POST 
+             */
+            function hacerPost(bodyDiccionario) {
+                console.log("[ServiceWorker] Intentando hacer el POST");
+                
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('POST', 'http://localhost:8080/producto/crearProducto/', true);
+                    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                    xhr.onload = function () {
+                        // do something to response
+                        // console.log(this.responseText);
+                    };
+                    let rsp = '';
+                    for (var key in bodyDiccionario) {
+                        // check if the property/key is defined in the object itself, not in parent
+                        if (bodyDiccionario.hasOwnProperty(key)) {           
+                            console.log(key, bodyDiccionario[key]);
+                            rsp += key + "=" +bodyDiccionario[key];
+                            rsp += '&';
+                        }
+                    }
+                    console.log("La cadena respuesta POST intento #2 es: "+ rsp);
+                    xhr.send(rsp);
+                
+            }
+            
+            function migrarDB() {                
+                var active = dataBase.result;
+                var data = active.transaction(["people"], "readwrite");
+                var object = data.objectStore("people");            
+                
+                object.openCursor().onsuccess = function (e) {
+                    
+                    var result = e.target.result;
+                    
+                    var dictRecord = {};
+                    
+                    if (result === null) {
+                        return;
+                    }
+                    //Correr el cursor
+                    for (var key in result.value) {
+                        dictRecord[key] = result.value[key];
+                    }
+                    
+                    console.log("Verificacion diccionario: ",JSON.stringify(dictRecord));
+                    console.log("Haciendo post de la pk: ", dictRecord[0]);
+                    if (navigator.onLine) {
+                        hacerPost(dictRecord);
+                    }
+                    
+                    else {
+                        return; //Terminar la ejecución
+                    }
+                    
+                    //Borrar el registro
+                    result.delete();
+                    
+                    //Continuar
+                    result.continue();                    
+                };
+                
+                data.oncomplete = function() {
+                  //Vacio 
+                }
+        }
+        </script>
+    </head>
+    <body onload="startDB();">
+        <form class="myForm" >
+            <h4>Crear Producto</h4>            
+            <div>
+            <input type="number" id="codigoBarras" placeholder="Ingrese el codigo de barras" />            
+            <input type="text" id="nombre" placeholder="Enter name" />
+            </div>
+            <div>            
+            <input type="number" id="cantidadMedida" placeholder="Enter cantidadMedida" />            
+            <input type="text" id="unidadMedida" placeholder="Enter unidadMedida" />
+            </div>
+            <div>
+            <input type="text" id="descripcion" placeholder="Enter descripcion" />            
+            <input type="text" id="marca" placeholder="Enter marca" />
+            </div>
+            <div>
+                <button type="button" onclick="add();">Save</button>
+                <button type="button" onclick="migrarDB();">Migrar la base de datos a global</button>
+            </div>            
+            </form>
+    </body>
+    
+    <!-- Footer -->
+        <footer style="background-color: #D8D8D8; position: relative; bottom: 0; width: 100%; height: 100px;">
+
+            <div style="padding: 30px">
+                <div style="float: left; width: 400px;" >ISIS-Consulting</div>
+                <div style="float: right; width: 220px;" >Universidad de los Andes</div>
+                <br>
+                <div style="float: left; width: 400px;" ><i>Desarrollo de requerimientos ASRs</i></div>
+            </div>
+            <br>
+
+        </footer>
+    <!-- Footer -->
+</html>

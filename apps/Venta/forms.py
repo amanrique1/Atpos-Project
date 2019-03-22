@@ -8,7 +8,7 @@ class FacturaForm(forms.ModelForm):
         #Campos a recibir
         fields = ['fecha', 'metodoDePago', 'pagado']
         labels={'fecha':'Fecha', 'metodoDePago':'Metodo de pago', 'pagado':'Pagado'}
-        widgets={'fecha':forms.DateInput(attrs={'class':'form-control'}), , 
+        widgets={'fecha':forms.DateInput(attrs={'class':'form-control'}),  
                  'metodoDePago':forms.TextInput(attrs={'class':'form-control'}),
                  'pagado':forms.NullBooleanSelect(attrs={'class':'form-control'})}
 

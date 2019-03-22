@@ -26,18 +26,18 @@
                     <table class="table table-hover">
                         <thead>
                         <tr style="color:#0E2EB0">
-                            <th>Punto de Venta</th>
-                            <th>Especificacion Producto</th>
-                            <th>Cantidad</th>
+                            <th>Fecha</th>
+                            <th>Metodo de Pago</th>
+                            <th>Pagado</th>
                         </tr>
                         </thead>
                         <tbody>
                                                        
-                        {% for actual in inventario %}
+                        {% for actual in facturas %}
                         <tr>
-                            <td>{{ actual.puntoDeVenta.nombre}}</td>
-                            <td>{{ actual.especificacionProducto.producto.nombre}}</td>
-                            <td>{{ actual.cantidad}}</td>
+                            <td>{{ actual.fecha}}</td>
+                            <td>{{ actual.metoDePago}}</td>
+                            <td>{{ actual.pagado}}</td>
                         </tr>
                         {% endfor %}
 

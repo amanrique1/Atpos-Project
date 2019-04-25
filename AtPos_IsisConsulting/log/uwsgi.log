@@ -1,0 +1,1432 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 14 18:57:47 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/src/
+chdir(): No such file or directory [core/uwsgi.c line 2623]
+chdir(): No such file or directory [core/uwsgi.c line 1647]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 14 18:57:47 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/src/
+chdir(): No such file or directory [core/uwsgi.c line 2623]
+chdir(): No such file or directory [core/uwsgi.c line 1647]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 14 18:57:48 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/src/
+chdir(): No such file or directory [core/uwsgi.c line 2623]
+chdir(): No such file or directory [core/uwsgi.c line 1647]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 14 18:57:48 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/src/
+chdir(): No such file or directory [core/uwsgi.c line 2623]
+chdir(): No such file or directory [core/uwsgi.c line 1647]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 14 18:57:48 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/src/
+chdir(): No such file or directory [core/uwsgi.c line 2623]
+chdir(): No such file or directory [core/uwsgi.c line 1647]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 14 18:59:05 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/src/
+chdir(): No such file or directory [core/uwsgi.c line 2623]
+chdir(): No such file or directory [core/uwsgi.c line 1647]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 14 18:59:06 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/src/
+chdir(): No such file or directory [core/uwsgi.c line 2623]
+chdir(): No such file or directory [core/uwsgi.c line 1647]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 14 18:59:06 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/src/
+chdir(): No such file or directory [core/uwsgi.c line 2623]
+chdir(): No such file or directory [core/uwsgi.c line 1647]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 14 18:59:06 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/src/
+chdir(): No such file or directory [core/uwsgi.c line 2623]
+chdir(): No such file or directory [core/uwsgi.c line 1647]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 14 18:59:06 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/src/
+chdir(): No such file or directory [core/uwsgi.c line 2623]
+chdir(): No such file or directory [core/uwsgi.c line 1647]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 14 19:01:21 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/src/
+chdir(): No such file or directory [core/uwsgi.c line 2623]
+chdir(): No such file or directory [core/uwsgi.c line 1647]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 14 19:01:21 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/src/
+chdir(): No such file or directory [core/uwsgi.c line 2623]
+chdir(): No such file or directory [core/uwsgi.c line 1647]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 14 19:01:21 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/src/
+chdir(): No such file or directory [core/uwsgi.c line 2623]
+chdir(): No such file or directory [core/uwsgi.c line 1647]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 14 19:01:21 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/src/
+chdir(): No such file or directory [core/uwsgi.c line 2623]
+chdir(): No such file or directory [core/uwsgi.c line 1647]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 14 19:01:22 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/src/
+chdir(): No such file or directory [core/uwsgi.c line 2623]
+chdir(): No such file or directory [core/uwsgi.c line 1647]
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 14 19:05:25 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/../
+your processes number limit is 3841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock fd 7
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Set PythonHome to /home/ubuntu/isis
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55b70ab32370
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 204800 bytes
+mapped 1388600 bytes (1356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55b70ab32370 pid: 6803 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6803)
+spawned uWSGI worker 1 (pid: 6821, cores: 1)
+spawned uWSGI worker 2 (pid: 6822, cores: 1)
+spawned uWSGI worker 3 (pid: 6823, cores: 1)
+spawned uWSGI worker 4 (pid: 6824, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 14 19:06:18 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/../
+your processes number limit is 3841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock fd 7
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Set PythonHome to /home/ubuntu/isis
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5599915f0370
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 204800 bytes
+mapped 1388600 bytes (1356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5599915f0370 pid: 6922 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6922)
+spawned uWSGI worker 1 (pid: 6940, cores: 1)
+spawned uWSGI worker 2 (pid: 6941, cores: 1)
+spawned uWSGI worker 3 (pid: 6942, cores: 1)
+spawned uWSGI worker 4 (pid: 6943, cores: 1)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 6990)
+Respawned uWSGI worker 2 (new pid: 6991)
+Respawned uWSGI worker 3 (new pid: 6992)
+Respawned uWSGI worker 4 (new pid: 6993)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7029)
+Respawned uWSGI worker 2 (new pid: 7030)
+Respawned uWSGI worker 3 (new pid: 7031)
+Respawned uWSGI worker 4 (new pid: 7032)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7047)
+Respawned uWSGI worker 2 (new pid: 7048)
+Respawned uWSGI worker 3 (new pid: 7049)
+Respawned uWSGI worker 4 (new pid: 7050)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7053)
+Respawned uWSGI worker 2 (new pid: 7054)
+Respawned uWSGI worker 3 (new pid: 7055)
+Respawned uWSGI worker 4 (new pid: 7056)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7077)
+Respawned uWSGI worker 2 (new pid: 7078)
+Respawned uWSGI worker 3 (new pid: 7079)
+Respawned uWSGI worker 4 (new pid: 7080)
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7264)
+Respawned uWSGI worker 2 (new pid: 7265)
+Respawned uWSGI worker 3 (new pid: 7266)
+Respawned uWSGI worker 4 (new pid: 7267)
+Not Found: /
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7269)
+Respawned uWSGI worker 2 (new pid: 7270)
+Respawned uWSGI worker 3 (new pid: 7271)
+Respawned uWSGI worker 4 (new pid: 7272)
+Not Found: /
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7279)
+Respawned uWSGI worker 2 (new pid: 7280)
+Respawned uWSGI worker 3 (new pid: 7281)
+Respawned uWSGI worker 4 (new pid: 7282)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7657)
+Respawned uWSGI worker 2 (new pid: 7658)
+Respawned uWSGI worker 3 (new pid: 7659)
+Respawned uWSGI worker 4 (new pid: 7660)
+Not Found: /
+Not Found: /favicon.ico
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7822)
+Respawned uWSGI worker 2 (new pid: 7823)
+Respawned uWSGI worker 3 (new pid: 7824)
+Respawned uWSGI worker 4 (new pid: 7825)
+Not Found: /
+Not Found: /
+Sun Apr 14 19:58:18 2019 - *** /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/ has been touched... grace them all !!! ***
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 7822)...
+Gracefully killing worker 2 (pid: 7823)...
+Gracefully killing worker 4 (pid: 7825)...
+Gracefully killing worker 3 (pid: 7824)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 7 mapped to socket 0 (/home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock)
+running /home/ubuntu/isis/bin/uwsgi
+[uWSGI] getting INI configuration from /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/conf/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Apr 14 19:58:19 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/../
+your processes number limit is 3841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 inherited UNIX address /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock fd 7
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Set PythonHome to /home/ubuntu/isis
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x560665c18360
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 204800 bytes
+mapped 1388600 bytes (1356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x560665c18360 pid: 6922 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 6922)
+sendmsg(): Transport endpoint is already connected [core/notify.c line 39]
+spawned uWSGI worker 1 (pid: 7843, cores: 1)
+spawned uWSGI worker 2 (pid: 7844, cores: 1)
+spawned uWSGI worker 3 (pid: 7845, cores: 1)
+spawned uWSGI worker 4 (pid: 7846, cores: 1)
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7849)
+Respawned uWSGI worker 2 (new pid: 7850)
+Respawned uWSGI worker 3 (new pid: 7851)
+Respawned uWSGI worker 4 (new pid: 7852)
+Not Found: /
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7855)
+Respawned uWSGI worker 2 (new pid: 7856)
+Respawned uWSGI worker 3 (new pid: 7857)
+Respawned uWSGI worker 4 (new pid: 7858)
+Not Found: /serviceworker.js
+Not Found: /manifest.json
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7860)
+Respawned uWSGI worker 2 (new pid: 7861)
+Respawned uWSGI worker 3 (new pid: 7862)
+Respawned uWSGI worker 4 (new pid: 7863)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7867)
+Respawned uWSGI worker 2 (new pid: 7868)
+Respawned uWSGI worker 3 (new pid: 7869)
+Respawned uWSGI worker 4 (new pid: 7870)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7873)
+Respawned uWSGI worker 2 (new pid: 7874)
+Respawned uWSGI worker 3 (new pid: 7875)
+Respawned uWSGI worker 4 (new pid: 7876)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7877)
+Respawned uWSGI worker 2 (new pid: 7878)
+Respawned uWSGI worker 3 (new pid: 7879)
+Respawned uWSGI worker 4 (new pid: 7880)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7881)
+Respawned uWSGI worker 2 (new pid: 7882)
+Respawned uWSGI worker 3 (new pid: 7883)
+Respawned uWSGI worker 4 (new pid: 7884)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7885)
+Respawned uWSGI worker 2 (new pid: 7886)
+Respawned uWSGI worker 3 (new pid: 7887)
+Respawned uWSGI worker 4 (new pid: 7888)
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7891)
+Respawned uWSGI worker 2 (new pid: 7892)
+Respawned uWSGI worker 3 (new pid: 7893)
+Respawned uWSGI worker 4 (new pid: 7894)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7896)
+Respawned uWSGI worker 2 (new pid: 7897)
+Respawned uWSGI worker 3 (new pid: 7898)
+Respawned uWSGI worker 4 (new pid: 7899)
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7901)
+Respawned uWSGI worker 2 (new pid: 7902)
+Respawned uWSGI worker 3 (new pid: 7903)
+Respawned uWSGI worker 4 (new pid: 7904)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7906)
+Respawned uWSGI worker 2 (new pid: 7907)
+Respawned uWSGI worker 3 (new pid: 7908)
+Respawned uWSGI worker 4 (new pid: 7909)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7911)
+Respawned uWSGI worker 2 (new pid: 7912)
+Respawned uWSGI worker 3 (new pid: 7913)
+Respawned uWSGI worker 4 (new pid: 7914)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7915)
+Respawned uWSGI worker 2 (new pid: 7916)
+Respawned uWSGI worker 3 (new pid: 7917)
+Respawned uWSGI worker 4 (new pid: 7918)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7919)
+Respawned uWSGI worker 2 (new pid: 7920)
+Respawned uWSGI worker 3 (new pid: 7921)
+Respawned uWSGI worker 4 (new pid: 7922)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7927)
+Respawned uWSGI worker 2 (new pid: 7928)
+Respawned uWSGI worker 3 (new pid: 7929)
+Respawned uWSGI worker 4 (new pid: 7930)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7933)
+Respawned uWSGI worker 2 (new pid: 7934)
+Respawned uWSGI worker 3 (new pid: 7935)
+Respawned uWSGI worker 4 (new pid: 7936)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7937)
+Respawned uWSGI worker 2 (new pid: 7938)
+Respawned uWSGI worker 3 (new pid: 7939)
+Respawned uWSGI worker 4 (new pid: 7940)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7941)
+Respawned uWSGI worker 2 (new pid: 7942)
+Respawned uWSGI worker 3 (new pid: 7943)
+Respawned uWSGI worker 4 (new pid: 7944)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7945)
+Respawned uWSGI worker 2 (new pid: 7946)
+Respawned uWSGI worker 3 (new pid: 7947)
+Respawned uWSGI worker 4 (new pid: 7948)
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /venta
+Not Found: /ventas
+Not Found: /venta
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7949)
+Respawned uWSGI worker 2 (new pid: 7950)
+Respawned uWSGI worker 3 (new pid: 7951)
+Respawned uWSGI worker 4 (new pid: 7952)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7953)
+Respawned uWSGI worker 2 (new pid: 7954)
+Respawned uWSGI worker 3 (new pid: 7955)
+Respawned uWSGI worker 4 (new pid: 7956)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7958)
+Respawned uWSGI worker 2 (new pid: 7959)
+Respawned uWSGI worker 3 (new pid: 7960)
+Respawned uWSGI worker 4 (new pid: 7961)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7965)
+Respawned uWSGI worker 2 (new pid: 7966)
+Respawned uWSGI worker 3 (new pid: 7967)
+Respawned uWSGI worker 4 (new pid: 7968)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7970)
+Respawned uWSGI worker 2 (new pid: 7971)
+Respawned uWSGI worker 3 (new pid: 7972)
+Respawned uWSGI worker 4 (new pid: 7973)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7974)
+Respawned uWSGI worker 2 (new pid: 7975)
+Respawned uWSGI worker 3 (new pid: 7976)
+Respawned uWSGI worker 4 (new pid: 7977)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7978)
+Respawned uWSGI worker 2 (new pid: 7979)
+Respawned uWSGI worker 3 (new pid: 7980)
+Respawned uWSGI worker 4 (new pid: 7981)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7985)
+Respawned uWSGI worker 2 (new pid: 7986)
+Respawned uWSGI worker 3 (new pid: 7987)
+Respawned uWSGI worker 4 (new pid: 7988)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7991)
+Respawned uWSGI worker 2 (new pid: 7992)
+Respawned uWSGI worker 3 (new pid: 7993)
+Respawned uWSGI worker 4 (new pid: 7994)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7995)
+Respawned uWSGI worker 2 (new pid: 7996)
+Respawned uWSGI worker 3 (new pid: 7997)
+Respawned uWSGI worker 4 (new pid: 7998)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 7999)
+Respawned uWSGI worker 2 (new pid: 8000)
+Respawned uWSGI worker 3 (new pid: 8001)
+Respawned uWSGI worker 4 (new pid: 8002)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8003)
+Respawned uWSGI worker 2 (new pid: 8004)
+Respawned uWSGI worker 3 (new pid: 8005)
+Respawned uWSGI worker 4 (new pid: 8006)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8007)
+Respawned uWSGI worker 2 (new pid: 8008)
+Respawned uWSGI worker 3 (new pid: 8009)
+Respawned uWSGI worker 4 (new pid: 8010)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8011)
+Respawned uWSGI worker 2 (new pid: 8012)
+Respawned uWSGI worker 3 (new pid: 8013)
+Respawned uWSGI worker 4 (new pid: 8014)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8016)
+Respawned uWSGI worker 2 (new pid: 8017)
+Respawned uWSGI worker 3 (new pid: 8018)
+Respawned uWSGI worker 4 (new pid: 8019)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8021)
+Respawned uWSGI worker 2 (new pid: 8022)
+Respawned uWSGI worker 3 (new pid: 8023)
+Respawned uWSGI worker 4 (new pid: 8024)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8025)
+Respawned uWSGI worker 2 (new pid: 8026)
+Respawned uWSGI worker 3 (new pid: 8027)
+Respawned uWSGI worker 4 (new pid: 8028)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8029)
+Respawned uWSGI worker 2 (new pid: 8030)
+Respawned uWSGI worker 3 (new pid: 8031)
+Respawned uWSGI worker 4 (new pid: 8032)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8033)
+Respawned uWSGI worker 2 (new pid: 8034)
+Respawned uWSGI worker 3 (new pid: 8035)
+Respawned uWSGI worker 4 (new pid: 8036)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8040)
+Respawned uWSGI worker 2 (new pid: 8041)
+Respawned uWSGI worker 3 (new pid: 8042)
+Respawned uWSGI worker 4 (new pid: 8043)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8048)
+Respawned uWSGI worker 2 (new pid: 8049)
+Respawned uWSGI worker 3 (new pid: 8050)
+Respawned uWSGI worker 4 (new pid: 8051)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8052)
+Respawned uWSGI worker 2 (new pid: 8053)
+Respawned uWSGI worker 3 (new pid: 8054)
+Respawned uWSGI worker 4 (new pid: 8055)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8056)
+Respawned uWSGI worker 2 (new pid: 8057)
+Respawned uWSGI worker 3 (new pid: 8058)
+Respawned uWSGI worker 4 (new pid: 8059)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8060)
+Respawned uWSGI worker 2 (new pid: 8061)
+Respawned uWSGI worker 3 (new pid: 8062)
+Respawned uWSGI worker 4 (new pid: 8063)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8064)
+Respawned uWSGI worker 2 (new pid: 8065)
+Respawned uWSGI worker 3 (new pid: 8066)
+Respawned uWSGI worker 4 (new pid: 8067)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8068)
+Respawned uWSGI worker 2 (new pid: 8069)
+Respawned uWSGI worker 3 (new pid: 8070)
+Respawned uWSGI worker 4 (new pid: 8071)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8073)
+Respawned uWSGI worker 2 (new pid: 8074)
+Respawned uWSGI worker 3 (new pid: 8075)
+Respawned uWSGI worker 4 (new pid: 8076)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8078)
+Respawned uWSGI worker 2 (new pid: 8079)
+Respawned uWSGI worker 3 (new pid: 8080)
+Respawned uWSGI worker 4 (new pid: 8081)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8096)
+Respawned uWSGI worker 2 (new pid: 8097)
+Respawned uWSGI worker 3 (new pid: 8098)
+Respawned uWSGI worker 4 (new pid: 8099)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8101)
+Respawned uWSGI worker 2 (new pid: 8102)
+Respawned uWSGI worker 3 (new pid: 8103)
+Respawned uWSGI worker 4 (new pid: 8104)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8105)
+Respawned uWSGI worker 2 (new pid: 8106)
+Respawned uWSGI worker 3 (new pid: 8107)
+Respawned uWSGI worker 4 (new pid: 8108)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8112)
+Respawned uWSGI worker 2 (new pid: 8113)
+Respawned uWSGI worker 3 (new pid: 8114)
+Respawned uWSGI worker 4 (new pid: 8115)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8118)
+Respawned uWSGI worker 2 (new pid: 8119)
+Respawned uWSGI worker 3 (new pid: 8120)
+Respawned uWSGI worker 4 (new pid: 8121)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8122)
+Respawned uWSGI worker 2 (new pid: 8123)
+Respawned uWSGI worker 3 (new pid: 8124)
+Respawned uWSGI worker 4 (new pid: 8125)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8126)
+Respawned uWSGI worker 2 (new pid: 8127)
+Respawned uWSGI worker 3 (new pid: 8128)
+Respawned uWSGI worker 4 (new pid: 8129)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8131)
+Respawned uWSGI worker 2 (new pid: 8132)
+Respawned uWSGI worker 3 (new pid: 8133)
+Respawned uWSGI worker 4 (new pid: 8134)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8137)
+Respawned uWSGI worker 2 (new pid: 8138)
+Respawned uWSGI worker 3 (new pid: 8139)
+Respawned uWSGI worker 4 (new pid: 8140)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8142)
+Respawned uWSGI worker 2 (new pid: 8143)
+Respawned uWSGI worker 3 (new pid: 8144)
+Respawned uWSGI worker 4 (new pid: 8145)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8147)
+Respawned uWSGI worker 2 (new pid: 8148)
+Respawned uWSGI worker 3 (new pid: 8149)
+Respawned uWSGI worker 4 (new pid: 8150)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8152)
+Respawned uWSGI worker 2 (new pid: 8153)
+Respawned uWSGI worker 3 (new pid: 8154)
+Respawned uWSGI worker 4 (new pid: 8155)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8156)
+Respawned uWSGI worker 2 (new pid: 8157)
+Respawned uWSGI worker 3 (new pid: 8158)
+Respawned uWSGI worker 4 (new pid: 8159)
+Not Found: /favicon.ico
+Not Found: /
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 8160)
+Respawned uWSGI worker 2 (new pid: 8161)
+Respawned uWSGI worker 3 (new pid: 8162)
+Respawned uWSGI worker 4 (new pid: 8163)
+SIGINT/SIGQUIT received...killing workers...
+SIGINT/SIGQUIT received...killing workers...
+SIGINT/SIGQUIT received...killing workers...
+SIGINT/SIGQUIT received...killing workers...
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM WARNING: unix socket /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock changed inode. Skip removal
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Apr 25 02:41:07 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/../
+your processes number limit is 3841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 bound to UNIX address /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock fd 7
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Set PythonHome to /home/ubuntu/isis
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x560807162370
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 204800 bytes
+mapped 1388600 bytes (1356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x560807162370 pid: 888 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 888)
+spawned uWSGI worker 1 (pid: 1102, cores: 1)
+spawned uWSGI worker 2 (pid: 1103, cores: 1)
+spawned uWSGI worker 3 (pid: 1104, cores: 1)
+spawned uWSGI worker 4 (pid: 1105, cores: 1)
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /serviceworker.js
+Not Found: /producto/crearproducto
+Not Found: /robots.txt
+Not Found: /
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 10648)
+Respawned uWSGI worker 2 (new pid: 10649)
+Respawned uWSGI worker 3 (new pid: 10650)
+Respawned uWSGI worker 4 (new pid: 10651)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 10672)
+Respawned uWSGI worker 2 (new pid: 10673)
+Respawned uWSGI worker 3 (new pid: 10674)
+Respawned uWSGI worker 4 (new pid: 10675)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 10722)
+Respawned uWSGI worker 2 (new pid: 10723)
+Respawned uWSGI worker 3 (new pid: 10724)
+Respawned uWSGI worker 4 (new pid: 10725)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 10795)
+Respawned uWSGI worker 2 (new pid: 10796)
+Respawned uWSGI worker 3 (new pid: 10797)
+Respawned uWSGI worker 4 (new pid: 10798)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 10812)
+Respawned uWSGI worker 2 (new pid: 10813)
+Respawned uWSGI worker 3 (new pid: 10814)
+Respawned uWSGI worker 4 (new pid: 10815)
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 11005)
+Respawned uWSGI worker 2 (new pid: 11006)
+Respawned uWSGI worker 3 (new pid: 11007)
+Respawned uWSGI worker 4 (new pid: 11008)
+Not Found: /
+worker 1 lifetime reached, it was running for 301 second(s)
+worker 2 lifetime reached, it was running for 301 second(s)
+worker 3 lifetime reached, it was running for 301 second(s)
+worker 4 lifetime reached, it was running for 301 second(s)
+Respawned uWSGI worker 1 (new pid: 11076)
+Respawned uWSGI worker 2 (new pid: 11077)
+Respawned uWSGI worker 3 (new pid: 11078)
+Respawned uWSGI worker 4 (new pid: 11079)
+Thu Apr 25 03:17:37 2019 - *** /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/ has been touched... grace them all !!! ***
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 11076)...
+Gracefully killing worker 3 (pid: 11078)...
+Gracefully killing worker 4 (pid: 11079)...
+Gracefully killing worker 2 (pid: 11077)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 7 mapped to socket 0 (/home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock)
+running /home/ubuntu/isis/bin/uwsgi
+[uWSGI] getting INI configuration from /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/conf/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Apr 25 03:17:38 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/../
+your processes number limit is 3841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 inherited UNIX address /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock fd 7
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Set PythonHome to /home/ubuntu/isis
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55f812c2d360
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 204800 bytes
+mapped 1388600 bytes (1356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55f812c2d360 pid: 888 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 888)
+sendmsg(): Transport endpoint is already connected [core/notify.c line 39]
+spawned uWSGI worker 1 (pid: 11101, cores: 1)
+spawned uWSGI worker 2 (pid: 11102, cores: 1)
+spawned uWSGI worker 3 (pid: 11103, cores: 1)
+spawned uWSGI worker 4 (pid: 11104, cores: 1)
+Thu Apr 25 03:17:41 2019 - *** /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/ has been touched... grace them all !!! ***
+...gracefully killing workers...
+Gracefully killing worker 4 (pid: 11104)...
+Gracefully killing worker 2 (pid: 11102)...
+Gracefully killing worker 3 (pid: 11103)...
+Gracefully killing worker 1 (pid: 11101)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 7 mapped to socket 0 (/home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock)
+running /home/ubuntu/isis/bin/uwsgi
+[uWSGI] getting INI configuration from /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/conf/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Apr 25 03:17:42 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/../
+your processes number limit is 3841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 inherited UNIX address /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock fd 7
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Set PythonHome to /home/ubuntu/isis
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x556870c77360
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 204800 bytes
+mapped 1388600 bytes (1356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x556870c77360 pid: 888 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 888)
+sendmsg(): Transport endpoint is already connected [core/notify.c line 39]
+spawned uWSGI worker 1 (pid: 11106, cores: 1)
+spawned uWSGI worker 2 (pid: 11107, cores: 1)
+spawned uWSGI worker 3 (pid: 11108, cores: 1)
+spawned uWSGI worker 4 (pid: 11109, cores: 1)
+Thu Apr 25 03:17:56 2019 - *** /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/ has been touched... grace them all !!! ***
+...gracefully killing workers...
+Gracefully killing worker 3 (pid: 11108)...
+Gracefully killing worker 4 (pid: 11109)...
+Gracefully killing worker 2 (pid: 11107)...
+Gracefully killing worker 1 (pid: 11106)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 7 mapped to socket 0 (/home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock)
+running /home/ubuntu/isis/bin/uwsgi
+[uWSGI] getting INI configuration from /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/conf/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Apr 25 03:17:57 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/../
+your processes number limit is 3841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 inherited UNIX address /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock fd 7
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Set PythonHome to /home/ubuntu/isis
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x562845efb360
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 204800 bytes
+mapped 1388600 bytes (1356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x562845efb360 pid: 888 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 888)
+sendmsg(): Transport endpoint is already connected [core/notify.c line 39]
+spawned uWSGI worker 1 (pid: 11114, cores: 1)
+spawned uWSGI worker 2 (pid: 11115, cores: 1)
+spawned uWSGI worker 3 (pid: 11116, cores: 1)
+spawned uWSGI worker 4 (pid: 11117, cores: 1)
+Thu Apr 25 03:18:00 2019 - *** /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/ has been touched... grace them all !!! ***
+...gracefully killing workers...
+Gracefully killing worker 3 (pid: 11116)...
+Gracefully killing worker 4 (pid: 11117)...
+Gracefully killing worker 2 (pid: 11115)...
+Gracefully killing worker 1 (pid: 11114)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 7 mapped to socket 0 (/home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock)
+running /home/ubuntu/isis/bin/uwsgi
+[uWSGI] getting INI configuration from /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/conf/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Apr 25 03:18:01 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/../
+your processes number limit is 3841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 inherited UNIX address /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock fd 7
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Set PythonHome to /home/ubuntu/isis
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x565524906360
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 204800 bytes
+mapped 1388600 bytes (1356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x565524906360 pid: 888 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 888)
+sendmsg(): Transport endpoint is already connected [core/notify.c line 39]
+spawned uWSGI worker 1 (pid: 11122, cores: 1)
+spawned uWSGI worker 2 (pid: 11123, cores: 1)
+spawned uWSGI worker 3 (pid: 11124, cores: 1)
+spawned uWSGI worker 4 (pid: 11125, cores: 1)
+Thu Apr 25 03:18:04 2019 - *** /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/ has been touched... grace them all !!! ***
+...gracefully killing workers...
+Gracefully killing worker 3 (pid: 11124)...
+Gracefully killing worker 4 (pid: 11125)...
+Gracefully killing worker 2 (pid: 11123)...
+Gracefully killing worker 1 (pid: 11122)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 7 mapped to socket 0 (/home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock)
+running /home/ubuntu/isis/bin/uwsgi
+[uWSGI] getting INI configuration from /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/conf/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Apr 25 03:18:05 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/../
+your processes number limit is 3841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 inherited UNIX address /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock fd 7
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Set PythonHome to /home/ubuntu/isis
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55f481485360
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 204800 bytes
+mapped 1388600 bytes (1356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55f481485360 pid: 888 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 888)
+sendmsg(): Transport endpoint is already connected [core/notify.c line 39]
+spawned uWSGI worker 1 (pid: 11127, cores: 1)
+spawned uWSGI worker 2 (pid: 11128, cores: 1)
+spawned uWSGI worker 3 (pid: 11129, cores: 1)
+spawned uWSGI worker 4 (pid: 11130, cores: 1)
+Thu Apr 25 03:18:08 2019 - *** /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/ has been touched... grace them all !!! ***
+...gracefully killing workers...
+Gracefully killing worker 3 (pid: 11129)...
+Gracefully killing worker 4 (pid: 11130)...
+Gracefully killing worker 2 (pid: 11128)...
+Gracefully killing worker 1 (pid: 11127)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 7 mapped to socket 0 (/home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock)
+running /home/ubuntu/isis/bin/uwsgi
+[uWSGI] getting INI configuration from /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/conf/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Apr 25 03:18:09 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/../
+your processes number limit is 3841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 inherited UNIX address /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock fd 7
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Set PythonHome to /home/ubuntu/isis
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5622868ea360
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 204800 bytes
+mapped 1388600 bytes (1356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5622868ea360 pid: 888 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 888)
+sendmsg(): Transport endpoint is already connected [core/notify.c line 39]
+spawned uWSGI worker 1 (pid: 11135, cores: 1)
+spawned uWSGI worker 2 (pid: 11136, cores: 1)
+spawned uWSGI worker 3 (pid: 11137, cores: 1)
+spawned uWSGI worker 4 (pid: 11138, cores: 1)
+Thu Apr 25 03:18:12 2019 - *** /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/ has been touched... grace them all !!! ***
+...gracefully killing workers...
+Gracefully killing worker 3 (pid: 11137)...
+Gracefully killing worker 4 (pid: 11138)...
+Gracefully killing worker 2 (pid: 11136)...
+Gracefully killing worker 1 (pid: 11135)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 7 mapped to socket 0 (/home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock)
+running /home/ubuntu/isis/bin/uwsgi
+[uWSGI] getting INI configuration from /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/conf/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Apr 25 03:18:13 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/../
+your processes number limit is 3841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 inherited UNIX address /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock fd 7
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Set PythonHome to /home/ubuntu/isis
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x555690469360
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 204800 bytes
+mapped 1388600 bytes (1356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x555690469360 pid: 888 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 888)
+sendmsg(): Transport endpoint is already connected [core/notify.c line 39]
+spawned uWSGI worker 1 (pid: 11143, cores: 1)
+spawned uWSGI worker 2 (pid: 11144, cores: 1)
+spawned uWSGI worker 3 (pid: 11145, cores: 1)
+spawned uWSGI worker 4 (pid: 11146, cores: 1)
+Thu Apr 25 03:18:20 2019 - *** /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/ has been touched... grace them all !!! ***
+...gracefully killing workers...
+Gracefully killing worker 4 (pid: 11146)...
+Gracefully killing worker 3 (pid: 11145)...
+Gracefully killing worker 2 (pid: 11144)...
+Gracefully killing worker 1 (pid: 11143)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 7 mapped to socket 0 (/home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock)
+running /home/ubuntu/isis/bin/uwsgi
+[uWSGI] getting INI configuration from /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/conf/uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Apr 25 03:18:21 2019] ***
+compiled with version: 7.3.0 on 14 April 2019 17:51:46
+os: Linux-4.15.0-1035-aws #37-Ubuntu SMP Mon Mar 18 16:15:14 UTC 2019
+nodename: ip-172-31-85-193
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING
+detected binary path: /home/ubuntu/isis/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/../
+your processes number limit is 3841
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uwsgi socket 0 inherited UNIX address /home/ubuntu/isis/ISIS2503-201910-S2-ISIS_CONSULTING/AtPos_IsisConsulting/run/uwsgi.sock fd 7
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Set PythonHome to /home/ubuntu/isis
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x558278351360
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+setting request body buffering size to 204800 bytes
+mapped 1388600 bytes (1356 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x558278351360 pid: 888 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 888)
+sendmsg(): Transport endpoint is already connected [core/notify.c line 39]
+spawned uWSGI worker 1 (pid: 11153, cores: 1)
+spawned uWSGI worker 2 (pid: 11154, cores: 1)
+spawned uWSGI worker 3 (pid: 11155, cores: 1)
+spawned uWSGI worker 4 (pid: 11156, cores: 1)

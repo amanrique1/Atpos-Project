@@ -1,24 +1,24 @@
 from django.shortcuts import render
 from apps.Venta.models import Factura
 from apps.Venta.forms import *
+from rest_framework.decorators import api_view, renderer_classes
+from rest_framework.parsers import JSONParser
+from django.http import JsonResponse, HttpResponse
+import json
 
-# Create your views here.
-def darFacturas(request):
-       
-    queryset = Factura.objects.all()[:10] #QuerySets para interactuar con el SMBD
-   
-    #Ejemplo de un QuerySet para cambiar de BD 
-    
-    # This will run on the 'other' database.
-    # Producto.objects.using('otra base de datos definida en DATABASES').all()
+#Devuelve todas las facturas.
+@api_view(["GET"])
+def darFacturas(request):       
+    queryset = Factura.objects.all()
+    respuesta = [factura.as_json() for factura in queryset]
+    return JsonResponse(respuesta, safe=False)
 
-    context = {
-        'facturas': queryset
-    }
+@api_view(["GET"])
+def darFacturasUsuario(request, usuario):
+    consulta = Factura.objects.filter(usuario=usuario).values()
+    return JsonResponse(list(consulta), safe=False)
 
-    return render(request, 'Venta/listarFacturas.html', context) #Ojo con el HTML
-def crearFactura(request):
-    
+def crearFactura(request):    
     if request.method == 'POST':
         form = FacturaForm(request.POST)
         if form.is_valid():

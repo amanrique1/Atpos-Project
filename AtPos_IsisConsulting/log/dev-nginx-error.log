@@ -1,1 +1,0 @@
-2019/04/14 21:07:29 [crit] 7820#7820: *74 SSL_do_handshake() failed (SSL: error:1420918C:SSL routines:tls_early_post_process_client_hello:version too low) while SSL handshaking, client: 208.93.152.20, server: 0.0.0.0:443

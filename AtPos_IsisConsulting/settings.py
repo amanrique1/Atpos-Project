@@ -38,10 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'apps.Producto',
-    'apps.Venta',
-    'apps.Negocio',
+    'django.contrib.staticfiles',    
+    'apps.Venta',    
     'rest_framework',
     'pwa',
 ]
@@ -80,15 +78,10 @@ WSGI_APPLICATION = 'AtPos_IsisConsulting.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {
+DATABASES = {    
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    },
-
-    'local': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'isis_consulting_atpos_local',
+        'NAME': 'venta',
         'USER':'geovanny',
         'PASSWORD':'prueba',
         'HOST':'localhost',

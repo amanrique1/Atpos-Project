@@ -6,7 +6,7 @@ class FacturaForm(forms.ModelForm):
     class Meta:        
         model = Factura #Le dice a Djando que este form es para los modelos de factura
         #Campos a recibir
-        fields = ['fecha', 'metodoDePago', 'pagado']
+        fields = ['fecha', 'metodoDePago', 'pagado', 'usuario']
         labels={'fecha':'Fecha', 'metodoDePago':'Metodo de pago', 'pagado':'Pagado'}
         widgets={'fecha':forms.DateInput(attrs={'class':'form-control'}),  
                  'metodoDePago':forms.TextInput(attrs={'class':'form-control'}),

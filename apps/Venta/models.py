@@ -7,6 +7,7 @@ class Factura(models.Model):
 	metodoDePago=models.CharField(max_length=30)
 	pagado=models.BooleanField()
 	usuario = models.CharField(max_length=256, null=False)
+	pago = models.PositiveIntegerField(null=True)
 
 	def as_json(self):
 		datos = model_to_dict(self, fields=[fields.name for fields in self._meta.fields]) #Poner en un diccionario los datos principales de la factura

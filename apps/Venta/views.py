@@ -26,12 +26,12 @@ def darFactura(request, id):
 @api_view(["POST"])
 def crearFactura(request):    
     if request.method == 'POST':
-        datos = JSONParser.parse(request)        
+        datos = JSONParser().parse(request)        
         form = FacturaForm(datos)
         if form.is_valid():
             factura = form.save(commit=False) 
             factura.save()
-            respuesta = {"mensaje": "La nueva factura se ha creado satisfactoriamente", "id":factura.id()}
+            respuesta = {"mensaje": "La nueva factura se ha creado satisfactoriamente", "id":factura.id}
             return HttpResponse(json.dumps(respuesta), content_type="application/json", status=200) #Dar Respuesta, json_dumps(dict) convierte un diccionario a texto parecido a stringyfy en JS            
         else:
              respuesta = {"mensaje" : "Existen errores en el proceso de creacion de la factura", "errores" : form.errors}
@@ -40,12 +40,12 @@ def crearFactura(request):
 @api_view(["POST"])             
 def crearVenta(request):    
     if request.method == 'POST':
-        datos = JSONParser.parse(request)
+        datos = JSONParser().parse(request)
         form = VentaForm(datos)
         if form.is_valid():
             venta = form.save(commit=False) 
             venta.save()
-            respuesta = {"mensaje": "La venta se ha creado correctamente y asociado a la factura", "id":venta.id()}
+            respuesta = {"mensaje": "La venta se ha creado correctamente y asociado a la factura", "id":venta.id}
             return HttpResponse(json.dumps(respuesta), content_type="application/json", status=200) #Dar Respuesta, json_dumps(dict) convierte un diccionario a texto parecido a stringyfy en JS                        
         else:
             respuesta = {"mensaje" : "Existen errores en el proceso de creacion de la factura", "errores" : form.errors}
@@ -53,9 +53,10 @@ def crearVenta(request):
 
 @api_view(["DELETE"])            
 def eliminarVenta(request, factura, especificacionProducto):
-    venta = Venta.objects.filter(factura=factura, especificacionProducto=especificacionProducto).get()
+    venta = Venta.objects.filter(factura=factura, especificacionProducto=especificacionProducto).get()    
+    print("ID Factura: ", factura, " especificacionProducto:", especificacionProducto)
     venta.delete()
-    if Venta.objects.filter(factura=factura, especificacionProducto=especificacionProducto).exist():
+    if Venta.objects.filter(factura=factura, especificacionProducto=especificacionProducto).count() == 0:
         respuesta = {"mensaje": "La venta se ha eliminado correctamente y asociado a la factura"}
         return HttpResponse(json.dumps(respuesta), content_type="application/json", status=200) #Dar Respuesta, json_dumps(dict) convierte un diccionario a texto parecido a stringyfy en JS                        
     else:

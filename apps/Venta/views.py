@@ -18,53 +18,46 @@ def darFacturasUsuario(request, usuario):
     consulta = Factura.objects.filter(usuario=usuario).values()
     return JsonResponse(list(consulta), safe=False)
 
+@api_view(["GET"])
+def darFactura(request, id):
+    consulta = Factura.objects.get(id=id)
+    return JsonResponse(consulta.as_json())
+
+@api_view(["POST"])
 def crearFactura(request):    
     if request.method == 'POST':
-        form = FacturaForm(request.POST)
+        datos = JSONParser.parse(request)        
+        form = FacturaForm(datos)
         if form.is_valid():
             factura = form.save(commit=False) 
             factura.save()
-            #return redirect('../darProductos')
+            respuesta = {"mensaje": "La nueva factura se ha creado satisfactoriamente", "id":factura.id()}
+            return HttpResponse(json.dumps(respuesta), content_type="application/json", status=200) #Dar Respuesta, json_dumps(dict) convierte un diccionario a texto parecido a stringyfy en JS            
         else:
-            print(form.errors)
-    else:
-        form = FacturaForm()
+             respuesta = {"mensaje" : "Existen errores en el proceso de creacion de la factura", "errores" : form.errors}
+             return HttpResponse(json.dumps(respuesta), content_type="application/json", status=400) #Dar Respuesta, json_dumps(dict) convierte un diccionario a texto parecido a stringyfy en JS         
 
-    context = {
-        'form': form,
-    }
-
-    return render(request, 'Venta/facturaForm.html', context)
-
-def darVentas(request):
-       
-    queryset = Venta.objects.all()[:10] #QuerySets para interactuar con el SMBD
-   
-    #Ejemplo de un QuerySet para cambiar de BD 
-    
-    # This will run on the 'other' database.
-    # Producto.objects.using('otra base de datos definida en DATABASES').all()
-
-    context = {
-        'ventas': queryset
-    }
-
-    return render(request, 'Venta/listarVentas.html', context) #Ojo con el HTML
-def crearVenta(request):
-    
+@api_view(["POST"])             
+def crearVenta(request):    
     if request.method == 'POST':
-        form = VentaForm(request.POST)
+        datos = JSONParser.parse(request)
+        form = VentaForm(datos)
         if form.is_valid():
             venta = form.save(commit=False) 
             venta.save()
-            return redirect('../darProductos')
+            respuesta = {"mensaje": "La venta se ha creado correctamente y asociado a la factura", "id":venta.id()}
+            return HttpResponse(json.dumps(respuesta), content_type="application/json", status=200) #Dar Respuesta, json_dumps(dict) convierte un diccionario a texto parecido a stringyfy en JS                        
         else:
-            print(form.errors)
+            respuesta = {"mensaje" : "Existen errores en el proceso de creacion de la factura", "errores" : form.errors}
+            return HttpResponse(json.dumps(respuesta), content_type="application/json", status=400) #Dar Respuesta, json_dumps(dict) convierte un diccionario a texto parecido a stringyfy en JS
+
+@api_view(["DELETE"])            
+def eliminarVenta(request, factura, especificacionProducto):
+    venta = Venta.objects.filter(factura=factura, especificacionProducto=especificacionProducto).get()
+    venta.delete()
+    if Venta.objects.filter(factura=factura, especificacionProducto=especificacionProducto).exist():
+        respuesta = {"mensaje": "La venta se ha eliminado correctamente y asociado a la factura"}
+        return HttpResponse(json.dumps(respuesta), content_type="application/json", status=200) #Dar Respuesta, json_dumps(dict) convierte un diccionario a texto parecido a stringyfy en JS                        
     else:
-        form = VentaForm()
-
-    context = {
-        'form': form,
-    }
-
-    return render(request, 'Venta/ventaForm.html', context)
+        respuesta = {"mensaje" : "Existen errores en el proceso de eliminacion de la venta"}
+        return HttpResponse(json.dumps(respuesta), content_type="application/json", status=409) #Dar Respuesta, json_dumps(dict) convierte un diccionario a texto parecido a stringyfy en JS

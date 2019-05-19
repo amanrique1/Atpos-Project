@@ -1,0 +1,30 @@
+{
+  "name": "microservicio-negocio",
+  "version": "1.0.0",
+  "description": "Version inicial del microservicio asociado al componente de negocio, desarrollado en Node.js Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ISIS2503/ISIS2503-201910-S2-ISIS_CONSULTING.git"
+  },
+  "keywords": [
+    "Microservicio-Negocio"
+  ],
+  "author": "ISIS Consulting Group",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ISIS2503/ISIS2503-201910-S2-ISIS_CONSULTING/issues"
+  },
+  "homepage": "https://github.com/ISIS2503/ISIS2503-201910-S2-ISIS_CONSULTING#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}

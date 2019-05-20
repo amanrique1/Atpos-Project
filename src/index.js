@@ -17,10 +17,11 @@ var db; //Referencia a la base de datos.
 //Diccionario con las rutas de los recursos de la aplicacion
 const rutas = {
     "crearpunto" : "/crearpunto",
-    "darpunto": "/darpunto",
-    "actualizarpunto": "/actualizarpunto",
+    "darpuntociudad": "/darpuntociudad/ciudad/:ciudad/direccion/:direccion",
+    "actualizarpunto": "/actualizarpunto/ciudad/:ciudad/direccion/:direccion",
     "eliminarpunto": "/eliminarpunto",
-    "darpuntos": "/darpuntos"
+    "darpuntos": "/darpuntos",
+    "darpuntonombre": "/darpuntonombre/:nombre"
 }
 
 //Etiquetas para el formato del json con los datos.
@@ -89,5 +90,78 @@ app.get(rutas["darpuntos"], (request, response) =>{
     const cursor = db.collection('puntos').find() //Da un cursor para recorrer todos los registros de la collecion
     const puntos = cursor.toArray((error, resultado) =>{
         response.send(resultado) //Enviar el resultado
+    });
+});
+
+//GET: Obtener la informacion de un punto de venta en el negocio dada la ciudad y la direccion.
+app.get(rutas["darpuntociudad"], (request, response) => {
+    
+    //Las consultas para MongoDB se realizan mediante BSON, la sintaxis del Query es un diccionario
+    query = {
+        $and: [ //$and indica que todos los criterios consecutivos iran bajo la clausula del Y
+            {ciudad: request.params.ciudad}, //Criterio equals ($eq)
+            {direccion: request.params.direccion}
+        ]
+    }
+    
+    db.collection('puntos').findOne(query, function(err, result){
+        if (result != null) { //Si la consulta arrojo algun resultado y no es vacia
+        console.log(`Nombre: ${result.nombre} Direccion: ${result.direccion}`)
+        mensaje = {"_id": result._id,"nombre": result.nombre, "direccion": result.direccion, "ciudad": result.ciudad}
+        return response.send(mensaje)        
+        }
+        
+        return response.status(404).send({"mensaje": "No se ha encontrado el punto de venta, recuerde que los valores de entrada deben ser exactos"}) //La consulta ha sido vacia
+    })
+});   
+
+//GET: Obtener la informacion de un punto de venta en el negocio dada la ciudad y la direccion.
+app.get(rutas["darpuntonombre"], (request, response) => {
+
+    //Las consultas para MongoDB se realizan mediante BSON, la sintaxis del Query es un diccionario
+    query = {
+        $and: [ //$and indica que todos los criterios consecutivos iran bajo la clausula del Y
+            {nombre: request.params.nombre}, //Criterio equals ($eq)            
+        ]
+    }
+    
+    //Ejecuta la consulta y devuelve los datos de interes.    
+    db.collection('puntos').findOne(query, function(err, result){
+        if (result != null) { //Si la consulta arrojo algun resultado y no es vacia
+        console.log(`Nombre: ${result.nombre} Direccion: ${result.direccion}`)
+        mensaje = {"_id": result._id,"nombre": result.nombre, "direccion": result.direccion, "ciudad": result.ciudad}
+        return response.send(mensaje)        
+        }
+        
+        return response.status(404).send({"mensaje": "No se ha encontrado el punto de venta, recuerde que los valores de entrada deben ser exactos"}) //La consulta ha sido vacia
+    })
+});
+
+//PUT: Actualizar la informacion de un punto de venta
+app.put(rutas["actualizarpunto"], (request, response) => {
+    //Confirmar que hay datos en el cuerpo de la peticion
+    if (Object.keys(request.body).length === 0) {
+        return response.status(400).send({"mensaje": "El cuerpo de la peticion está vacio"})
+    }
+    /**Las consultas para MongoDB se realizan mediante BSON, la sintaxis del Query es un diccionario
+    pQuery = {
+        $and: [ //$and indica que todos los criterios consecutivos iran bajo la clausula del Y
+            {ciudad: request.params.ciudad}, //Criterio equals ($eq)
+            {direccion: request.params.direccion}
+        ]
+    }
+    */
+
+    db.collection('puntos').findOneAndUpdate({"ciudad": request.params.ciudad, "direccion": request.params.direccion}, {$set: request.body}, {returnNewDocument:true}, function(err, result){
+        if (err) {
+            mensaje = {"mensaje": "Error ejecutando la actualizacion", "error": err}
+            return response.status(500).send(mensaje)
+        }
+        else if (result != null) { //El elemento existe y su actualizacion se realizo con exito 
+            mensaje = {"mensaje":"Actualizacion realizada con exito"}
+            return response.send(mensaje)
+        }
+        //El elemento a actualizar no existe
+        return response.status(404).send({"mensaje": "No se ha encontrado el punto de venta para actualizar, recuerde que los valores de entrada deben ser exactos"}) //La consulta ha sido vacia
     });
 });

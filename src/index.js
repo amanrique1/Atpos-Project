@@ -14,12 +14,12 @@ const uri = "mongodb+srv://Spectra:$Spectra09$@microservicio-negocio-jkqvg.mongo
 const client = new MongoClient(uri, {useNewUrlParser:true});
 var db; //Referencia a la base de datos.
 
-//Diccionario con las rutas de los recursos de la aplicacion
+//Diccionario con las rutas de los recursos del microservicio
 const rutas = {
     "crearpunto" : "/crearpunto",
     "darpuntociudad": "/darpuntociudad/ciudad/:ciudad/direccion/:direccion",
     "actualizarpunto": "/actualizarpunto/ciudad/:ciudad/direccion/:direccion",
-    "eliminarpunto": "/eliminarpunto",
+    "eliminarpunto": "/eliminarpunto/ciudad/:ciudad/direccion/:direccion",
     "darpuntos": "/darpuntos",
     "darpuntonombre": "/darpuntonombre/:nombre"
 }
@@ -142,16 +142,8 @@ app.put(rutas["actualizarpunto"], (request, response) => {
     //Confirmar que hay datos en el cuerpo de la peticion
     if (Object.keys(request.body).length === 0) {
         return response.status(400).send({"mensaje": "El cuerpo de la peticion está vacio"})
-    }
-    /**Las consultas para MongoDB se realizan mediante BSON, la sintaxis del Query es un diccionario
-    pQuery = {
-        $and: [ //$and indica que todos los criterios consecutivos iran bajo la clausula del Y
-            {ciudad: request.params.ciudad}, //Criterio equals ($eq)
-            {direccion: request.params.direccion}
-        ]
-    }
-    */
-
+    }    
+    //Operacion sobre la base de datos
     db.collection('puntos').findOneAndUpdate({"ciudad": request.params.ciudad, "direccion": request.params.direccion}, {$set: request.body}, {returnNewDocument:true}, function(err, result){
         if (err) {
             mensaje = {"mensaje": "Error ejecutando la actualizacion", "error": err}
@@ -164,4 +156,22 @@ app.put(rutas["actualizarpunto"], (request, response) => {
         //El elemento a actualizar no existe
         return response.status(404).send({"mensaje": "No se ha encontrado el punto de venta para actualizar, recuerde que los valores de entrada deben ser exactos"}) //La consulta ha sido vacia
     });
+});
+
+//DELETE: Elimina un punto de venta
+app.delete(rutas["eliminarpunto"], (request, response) => {
+    //Operacion de eliminacion sobre la DB
+    db.collection('puntos').findOneAndDelete({$and:[{"ciudad": request.params.ciudad}, {"direccion": request.params.direccion}]}, function(err, result) {
+        if (err) {
+            mensaje = {"mensaje": "Error ejecutando la eliminacion", "error": err}
+            return response.status(500).send(mensaje)
+        }
+        else if (result.value != null) { //El elemento existe y su actualizacion se realizo con exito
+            console.log(result)            
+            mensaje = {"mensaje":"Eliminacion realizada con exito", "datosEliminados": result.value}
+            return response.send(mensaje)
+        }
+        //El elemento a actualizar no existe
+        return response.status(404).send({"mensaje": "No se ha encontrado el punto de venta para eliminar, recuerde que los valores de entrada deben ser exactos"}) //La consulta ha sido vacia
+    })
 });
